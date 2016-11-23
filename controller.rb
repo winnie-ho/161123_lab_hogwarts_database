@@ -2,6 +2,7 @@ require ('sinatra')
 require ('sinatra/contrib/all')
 require ('pry-byebug')
 require_relative ('models/student')
+require_relative ('models/house')
 
 # show all students
 get '/students' do
@@ -11,6 +12,7 @@ end
 
 #serve up new student form
 get '/students/new' do
+  @houses = House.all()
   erb(:new)
 end
 
@@ -20,4 +22,6 @@ post '/students' do
   student.save()
   redirect to ('/students')
 end
+
+
 

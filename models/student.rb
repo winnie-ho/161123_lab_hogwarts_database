@@ -23,7 +23,13 @@ class Student
   def house
     sql = "SELECT * FROM houses WHERE id = #{@house_id};"
     result = SqlRunner.run(sql)
-    return result[0]
+    return result[0]['name']
+  end
+
+  def logo_url
+    sql = "SELECT * FROM houses WHERE id = #{@house_id};"
+    result = SqlRunner.run(sql)
+    return result[0]['logo_url']
   end
 
 
