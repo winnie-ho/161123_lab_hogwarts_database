@@ -4,7 +4,7 @@ require('pry-byebug')
 
 house1 = House.new({
   "name"=>"Gryffindor",
-  "logo_url"=>"gryffindor_logo.jpg"
+  "logo_url"=>"gryffindor_logo.png"
   })
 
 house2 = House.new({
@@ -14,12 +14,13 @@ house2 = House.new({
 
 house3 = House.new({
   "name"=>"Ravenclaw",
-  "logo_url"=>"ravenclaw_logo.jpg"
+  "logo_url"=>"ravenclaw_logo.png
+  "
   })
 
 house4 = House.new({
   "name"=>"Slytherin",
-  "logo_url"=>"slytherin_logo.jpg"
+  "logo_url"=>"slytherin_logo.png"
   })
 
 house1.save()
